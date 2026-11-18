@@ -13,26 +13,25 @@ public class ProductCalculations implements IProductCalculations {
 
     private double price;
 
-    // Constructor
+    
     public ProductCalculations(double price) {
         this.price = price;
     }
 
-    // Calculate VAT (15%)
+    // VAT of 15%
     @Override
     public double GetVat() {
 
         return price * 0.15;
     }
 
-    // Calculate Commission (5%)
+    // Commission of 5%
     @Override
     public double GetCommission() {
 
         return price * 0.05;
     }
 
-    // Calculate Total Sale Amount
     @Override
     public double GetTotal() {
 

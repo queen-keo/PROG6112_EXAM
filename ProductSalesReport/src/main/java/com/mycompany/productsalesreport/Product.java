@@ -11,22 +11,22 @@ package com.mycompany.productsalesreport;
 
 public class Product implements IProduct {
 
-    // One-dimensional array for product names
+    // a one-dimensional array for product names
     private String[] productNames = {
         "Cozy Nights Monarch mattress",
         "Restonic Barbados mattress",
         "Sealy Phuket mattress"
     };
 
-    // Two-dimensional array for monthly sales
+    // a two-dimensional array for monthly sales
     private int[][] sales = new int[3][3];
 
-    // A Constructor
+    // created a constructor
     public Product(int[][] sales) {
         this.sales = sales;
     }
 
-    // Calculate total products sold
+    // Calculating the total products sold
     @Override
     public int GetTotalProductsSold() {
 
@@ -41,7 +41,7 @@ public class Product implements IProduct {
         return total;
     }
 
-    // Calculate average products sold
+    // Calculating the average products sold
     @Override
     public int GetAverageProductSold() {
 
@@ -50,7 +50,7 @@ public class Product implements IProduct {
         return total / (sales.length * sales[0].length);
     }
 
-    // Determine the most popular product
+    // here we are determining the most popular product
     @Override
     public String GetMostPopularProduct() {
 

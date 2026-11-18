@@ -1,0 +1,9 @@
+DATA LOG
+****************************************
+Customer Name: keo
+Product: Restonic Barbados
+VAT: R 750.0
+COMMISSION: R 250.0
+TOTAL: R 6000.0
+****************************************
+
